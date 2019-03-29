@@ -1,0 +1,33 @@
+<%Actor.all.each do |actores|%>
+  <table>
+    <tr>
+      <td><img src="<%=actores.image_url%>"></td>
+    <tr>
+
+    <tr>
+      <td><%=actores.name%></td>
+    <tr>
+
+    <tr>
+      <td><%=actores.bio%></td>
+    <tr>
+
+    <tr>
+      <td><%=actores.birth_date%></td>
+    <tr>
+
+    <tr>
+      <td><%=actores.birth_place%></td>
+    <tr>
+
+    <% if actores.death_date != nil %>
+      <tr>
+        <td><%=actores.death_date%></td>
+      <tr>
+      <tr>
+        <td><%=actores.death_place%></td>
+      <tr>
+    <%end%>
+
+  </table>
+<%end%>
